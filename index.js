@@ -1,27 +1,31 @@
 const attendee = {
-  attendeeId:"T001",
-  name:"Alice Smith",
-  event:"Javascript Conference",
-  ticketType:"VIP",
-  ticketPrice:150.00
+  attendeeId: "T001",
+  name: "Alice Smith",
+  event: "JavaScript Conference",
+  ticketType: "VIP",
+  ticketPrice: 150.00
 };
 
-function logAttendeeName(attendee){
+function logAttendeeName(attendee) {
   console.log(attendee.name);
 }
-function logTicketPrice(attendee){
+function logTicketPrice(attendee) {
   console.log(attendee.ticketPrice);
 }
-function updateTicketType(attendee, newTicketType){
-  newTicketType = attendee.ticketPrice;
+function updateTicketType(attendee, newTicketType) {
+  attendee.ticketType = newTicketType;
   return newTicketType;
 }
-function updateTicketPrice(attendee, newTicketPrice){
-  newTicketPrice = attendee.ticketPrice;
+function updateTicketPrice(attendee, newTicketPrice) {
+  attendee.ticketPrice = newTicketPrice;
   return newTicketPrice;
 }
-function removeEventProperty(attendee){
+function removeEventProperty(attendee) {
   delete attendee.event;
+}
+function addCheckedInProperty(attendee) {
+  attendee.checkedIn = true;
+  return attendee;
 }
 
 //Needed for the tests to work. Don't modify
