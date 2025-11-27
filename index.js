@@ -14,9 +14,15 @@ function logTicketPrice(attendee){
 }
 function updateTicketType(attendee, newTicketType){
   newTicketType = attendee.ticketPrice;
+  return newTicketType;
 }
-
-
+function updateTicketPrice(attendee, newTicketPrice){
+  newTicketPrice = attendee.ticketPrice;
+  return newTicketPrice;
+}
+function removeEventProperty(attendee){
+  delete attendee.event;
+}
 
 //Needed for the tests to work. Don't modify
 module.exports = {
