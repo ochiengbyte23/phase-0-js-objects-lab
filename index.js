@@ -9,6 +9,13 @@ const attendee = {
 function logAttendeeName(attendee){
   console.log(attendee.name);
 }
+function logTicketPrice(attendee){
+  console.log(attendee.ticketPrice);
+}
+function updateTicketType(attendee, newTicketType){
+  newTicketType = attendee.ticketPrice;
+}
+
 
 
 //Needed for the tests to work. Don't modify
